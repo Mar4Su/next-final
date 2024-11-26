@@ -1,0 +1,417 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Nov 26 22:07:05 2024
+# Process ID: 6568
+# Current directory: C:/Users/user/Desktop/finalprojmara/next final/next final.runs/synth_1
+# Command line: vivado.exe -log random_number_display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source random_number_display.tcl
+# Log file: C:/Users/user/Desktop/finalprojmara/next final/next final.runs/synth_1/random_number_display.vds
+# Journal file: C:/Users/user/Desktop/finalprojmara/next final/next final.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source random_number_display.tcl -notrace
+Command: synth_design -top random_number_display -part xc7s75fgga484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s75'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s75'
+INFO: [Device 21-403] Loading part xc7s75fgga484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8208
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1025.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'random_number_display' [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:24]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_display' [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_display' (1#1) [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'random_number_display' (2#1) [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1025.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1025.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1025.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1025.117 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc]
+WARNING: [Vivado 12-584] No ports matched 'button'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'button'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Com[0]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Com[1]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Com[2]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Com[3]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keypad[0]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keypad[1]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keypad[2]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keypad[3]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keypad[4]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keypad[5]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keypad[6]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keypad[7]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'match'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegA'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegB'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegC'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegD'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegE'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegF'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegG'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Com[0]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Com[1]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Com[2]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Com[3]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'match'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegA'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegB'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegC'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegD'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegE'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegF'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegG'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Com[0]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Com[1]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Com[2]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Com[3]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'match'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegA'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegB'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegC'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegD'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegE'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegF'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegG'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Com[0]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Com[1]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Com[2]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Com[3]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keypad[0]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keypad[1]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keypad[2]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keypad[3]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keypad[4]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keypad[5]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keypad[6]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keypad[7]'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegA'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegB'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegC'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegD'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegE'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegF'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SegG'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:151]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:151]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'match'. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:154]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc:154]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/constrs_1/new/default.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/random_number_display_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/random_number_display_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1027.152 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1027.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1027.152 ; gain = 2.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s75fgga484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1027.152 ; gain = 2.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1027.152 ; gain = 2.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1027.152 ; gain = 2.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   8 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 140 (col length:80)
+BRAMs: 180 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1027.152 ; gain = 2.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1027.152 ; gain = 2.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1027.152 ; gain = 2.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1037.422 ; gain = 12.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1042.250 ; gain = 17.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1042.250 ; gain = 17.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1042.250 ; gain = 17.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1042.250 ; gain = 17.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1042.250 ; gain = 17.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1042.250 ; gain = 17.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |     1|
+|3     |LUT2  |     2|
+|4     |LUT3  |     1|
+|5     |LUT4  |    15|
+|6     |FDCE  |     5|
+|7     |IBUF  |     4|
+|8     |OBUF  |    15|
+|9     |OBUFT |     4|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1042.250 ; gain = 17.133
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1042.250 ; gain = 15.098
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1042.250 ; gain = 17.133
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1054.191 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1061.023 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 66 Warnings, 66 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1061.023 ; gain = 35.906
+INFO: [Common 17-1381] The checkpoint 'C:/Users/user/Desktop/finalprojmara/next final/next final.runs/synth_1/random_number_display.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file random_number_display_utilization_synth.rpt -pb random_number_display_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 26 22:07:23 2024...
