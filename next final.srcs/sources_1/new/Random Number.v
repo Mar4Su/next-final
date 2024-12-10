@@ -51,15 +51,33 @@ wire match, not_match;
 // LCD states and messaging
 reg [127:0] lcd_message;
 reg timersw;
+reg [23:0] clk_divider; // Adjust bit width as per clk frequency
+reg slow_clk;
 
+reg slow_enable; // Enable signal for slow operations
+
+always @(posedge clk or posedge rst) begin
+if (rst) begin
+clk_divider <= 24'd0;
+slow_enable <= 1'b0;
+end else begin
+if (clk_divider == (1000 - 1)) begin // Assuming 100 MHz clock and 1 Hz timer
+clk_divider <= 24'd0;
+slow_enable <= 1'b1; // Generate one pulse every second
+end else begin
+clk_divider <= clk_divider + 1;
+slow_enable <= 1'b0;
+end
+end
+end
 // Timer logic
 always @(posedge clk or posedge rst) begin
 if (rst) begin
 timer_count <= 24'd0;
 end else if (start) begin
 timer_count <= 24'd0; // Reset timer on generate button press
-end else if (timersw) begin
-timer_count <= timer_count + 1; // Increment timer if timersw is active
+end else if (timersw && slow_enable) begin
+timer_count <= timer_count + 1; // Increment timer only on slow_enable
 end
 end
 
@@ -152,16 +170,16 @@ end
 
 always @(*) begin
 if (match) begin
-tone_freq = 14'd1911; // High tone for correct match
+tone_freq = 14'd50; // High tone for correct match
 end else if (not_match) begin
-tone_freq = 14'd3822; // Low tone for incorrect match
+tone_freq = 14'd100; // Low tone for incorrect match
 end else begin
 tone_freq = 14'd0; // No sound
 end
 end
 
 assign piezo = piezo_clk;
- // Register to store the matched time
+// Register to store the matched time
 
 // Store the timer value when a match occurs
 always @(posedge clk or posedge rst) begin
@@ -172,16 +190,34 @@ matched_time <= timer_count; // Capture the timer value at the match
 end
 end
 
-// LCD Driver logic
+reg [7:0] ascii_digit [3:0]; // Array for storing ASCII digits of matched_time
+
+always @(*) begin
+// Extract each digit of matched_time
+ascii_digit[0] = (matched_time % 10) + 8'd48; // Units place
+ascii_digit[1] = ((matched_time / 10) % 10) + 8'd48; // Tens place
+ascii_digit[2] = ((matched_time / 100) % 10) + 8'd48;// Hundreds place
+ascii_digit[3] = ((matched_time / 1000) % 10) + 8'd48;// Thousands place
+end
+
+// Assign lcd_message based on game state
 always @(posedge clk or posedge rst) begin
 if (rst) begin
-lcd_message <= "          Press Generate";
+lcd_message <= " Press Generate";
 end else if (start && !stop) begin
-lcd_message <= "         Press Stop";
+lcd_message <= " Press Stop";
 end else if (timersw && !match) begin
-lcd_message <= {"         Timer:", timer_digits[3] + 8'd48, timer_digits[2] + 8'd48, timer_digits[1] + 8'd48, timer_digits[0] + 8'd48};
+lcd_message <= {" Timer:",
+timer_digits[3] + 8'd48,
+timer_digits[2] + 8'd48,
+timer_digits[1] + 8'd48,
+timer_digits[0] + 8'd48};
 end else if (match) begin
-lcd_message <= {"         Time:", matched_time[23:20] + 8'd48, matched_time[19:16] + 8'd48, matched_time[15:12] + 8'd48, matched_time[11:8] + 8'd48};
+lcd_message <= {" Time:",
+ascii_digit[3],
+ascii_digit[2],
+ascii_digit[1],
+ascii_digit[0]};
 end
 end
 

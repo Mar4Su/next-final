@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 // pre-commands:
-ISETouchFile( "write_bitstream", "begin" );
+ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
          "-log random_number_display.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source random_number_display.tcl -notrace" );
 
