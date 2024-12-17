@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7s75fgga484-1" LaunchTime="1733832481">
+<GenRun Id="synth_1" LaunchPart="xc7s75fgga484-1" LaunchTime="1734435223">
   <File Type="PA-TCL" Name="random_number_display.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="random_number_display_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="random_number_display_reports.tcl"/>
@@ -11,7 +11,7 @@
   <File Type="VDS-TIMING-PB" Name="random_number_display_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/Random Number.v">
+    <File Path="$PPRDIR/../../../Downloads/Random Number.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

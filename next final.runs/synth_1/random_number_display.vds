@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Tue Dec 10 21:08:02 2024
-# Process ID: 9272
+# Start of session at: Tue Dec 17 20:33:45 2024
+# Process ID: 12188
 # Current directory: C:/Users/user/Desktop/finalprojmara/next final/next final.runs/synth_1
 # Command line: vivado.exe -log random_number_display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source random_number_display.tcl
 # Log file: C:/Users/user/Desktop/finalprojmara/next final/next final.runs/synth_1/random_number_display.vds
@@ -17,34 +17,34 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s75'
 INFO: [Device 21-403] Loading part xc7s75fgga484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 9296
+INFO: [Synth 8-7075] Helper process launched with PID 17244
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1025.578 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1025.715 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'random_number_display' [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:26]
-INFO: [Synth 8-6157] synthesizing module 'lcd_driver' [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:276]
+INFO: [Synth 8-6157] synthesizing module 'random_number_display' [C:/Users/user/Downloads/Random Number.v:26]
+INFO: [Synth 8-6157] synthesizing module 'lcd_driver' [C:/Users/user/Downloads/Random Number.v:276]
 	Parameter IDLE bound to: 4'b0000 
 	Parameter INIT bound to: 4'b0001 
 	Parameter WRITE_CMD bound to: 4'b0010 
 	Parameter WRITE_CHAR bound to: 4'b0011 
 	Parameter NEXT_CHAR bound to: 4'b0100 
-INFO: [Synth 8-6155] done synthesizing module 'lcd_driver' (1#1) [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:276]
-INFO: [Synth 8-6157] synthesizing module 'seven_segment_display' [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:254]
-INFO: [Synth 8-6155] done synthesizing module 'seven_segment_display' (2#1) [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:254]
-INFO: [Synth 8-6155] done synthesizing module 'random_number_display' (3#1) [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_driver' (1#1) [C:/Users/user/Downloads/Random Number.v:276]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_display' [C:/Users/user/Downloads/Random Number.v:254]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_display' (2#1) [C:/Users/user/Downloads/Random Number.v:254]
+INFO: [Synth 8-6155] done synthesizing module 'random_number_display' (3#1) [C:/Users/user/Downloads/Random Number.v:26]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1025.578 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1025.715 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1025.578 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1025.715 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1025.578 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1025.715 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1025.578 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1025.715 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -205,26 +205,26 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/random_number_display_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1034.473 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1034.328 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1034.473 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1034.328 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1034.473 ; gain = 8.895
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1034.328 ; gain = 8.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s75fgga484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1034.473 ; gain = 8.895
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1034.328 ; gain = 8.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1034.473 ; gain = 8.895
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1034.328 ; gain = 8.613
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'lcd_driver'
 ---------------------------------------------------------------------------------------------------
@@ -237,7 +237,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'lcd_d
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'lcd_driver'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1034.473 ; gain = 8.895
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1034.328 ; gain = 8.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -285,49 +285,49 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1517.355 ; gain = 491.777
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 1518.195 ; gain = 492.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1517.355 ; gain = 491.777
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 1518.195 ; gain = 492.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1517.355 ; gain = 491.777
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 1518.195 ; gain = 492.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[23]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[23] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[22]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[22] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[21]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[21] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[20]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[20] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[19]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[19] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[18]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[18] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[17]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[17] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[16]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[16] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[15]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[15] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[14]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[14] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[13]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[13] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[12]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[12] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[11]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[11] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[10]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[10] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[9]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[9] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[8]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[8] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[7]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[7] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[6]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[6] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[5]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[5] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[4]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[4] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[3]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[3] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[2]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[2] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[1]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[1] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
-INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[0]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[0] ) and driving same net [C:/Users/user/Desktop/finalprojmara/next final/next final.srcs/sources_1/new/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[23]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[23] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[22]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[22] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[21]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[21] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[20]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[20] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[19]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[19] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[18]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[18] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[17]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[17] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[16]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[16] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[15]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[15] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[14]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[14] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[13]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[13] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[12]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[12] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[11]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[11] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[10]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[10] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[9]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[9] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[8]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[8] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[7]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[7] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[6]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[6] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[5]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[5] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[4]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[4] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[3]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[3] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[2]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[2] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[1]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[1] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
+INFO: [Synth 8-4765] Removing register instance (\matched_time_reg[0]__0 ) from module (random_number_display) as it is equivalent to (\matched_time_reg[0] ) and driving same net [C:/Users/user/Downloads/Random Number.v:121]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 1517.355 ; gain = 491.777
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:33 . Memory (MB): peak = 1518.195 ; gain = 492.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -345,37 +345,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 1517.355 ; gain = 491.777
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:35 . Memory (MB): peak = 1518.195 ; gain = 492.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 1517.355 ; gain = 491.777
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:35 . Memory (MB): peak = 1518.195 ; gain = 492.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 1517.355 ; gain = 491.777
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:35 . Memory (MB): peak = 1518.195 ; gain = 492.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 1517.355 ; gain = 491.777
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:35 . Memory (MB): peak = 1518.195 ; gain = 492.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 1517.355 ; gain = 491.777
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:35 . Memory (MB): peak = 1518.195 ; gain = 492.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 1517.355 ; gain = 491.777
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:35 . Memory (MB): peak = 1518.195 ; gain = 492.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -408,26 +408,26 @@ Report Cell Usage:
 |15    |OBUFT  |     4|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 1517.355 ; gain = 491.777
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:35 . Memory (MB): peak = 1518.195 ; gain = 492.480
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1517.355 ; gain = 482.883
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 1517.355 ; gain = 491.777
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 1518.195 ; gain = 483.867
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:35 . Memory (MB): peak = 1518.195 ; gain = 492.480
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1517.355 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1518.195 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 192 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'random_number_display' is not ideal for floorplanning, since the cellview 'random_number_display' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1517.355 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1518.195 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 47 Infos, 51 Warnings, 50 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 1517.355 ; gain = 491.777
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 1518.195 ; gain = 492.480
 INFO: [Common 17-1381] The checkpoint 'C:/Users/user/Desktop/finalprojmara/next final/next final.runs/synth_1/random_number_display.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file random_number_display_utilization_synth.rpt -pb random_number_display_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Dec 10 21:08:38 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 17 20:34:25 2024...
